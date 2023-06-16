@@ -15,13 +15,13 @@ spec:
       audit:
         maxAge: 7d
     elasticsearch:
-      nodeCount: 1 
+      nodeCount: 3 
       storage:
         storageClassName: "ocs-storagecluster-ceph-rbd" 
         size: 200G
       resources: 
         limits:
-          memory: "8Gi"
+          memory: "16Gi"
         requests:
           memory: "8Gi"
       proxy: 
