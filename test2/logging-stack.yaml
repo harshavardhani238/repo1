@@ -16,7 +16,9 @@ spec:
         maxAge: 7d
     elasticsearch:
       nodeCount: 3 
-      storage: {}
+      storage: 
+        storageClassName: "new-pv-testing"
+        size: "100G"
       resources: 
           limits:
             memory: "16Gi"
