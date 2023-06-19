@@ -42,7 +42,7 @@ spec:
       fluentd:
         resources:
           limits:
-            memory: 736Mi
+            memory: 256Mi
           requests:
             cpu: 100m
-            memory: 736Mi
+            memory: 256Mi
