@@ -23,7 +23,7 @@ spec:
           cpu: "1"
           memory: 8Gi
       storage:
-        storageClassName: "ocs-storagecluster-cephfs"
+        storageClassName: "ocs-storagecluster-ceph-rbd"
         size: "100G"
       redundancyPolicy: "SingleRedundancy"
   visualization: 
