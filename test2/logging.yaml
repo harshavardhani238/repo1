@@ -18,23 +18,23 @@ spec:
       nodeCount: 3
       resources:
         limits:
-          memory: 16Gi
+          memory: 8Gi
         requests:
           cpu: "1"
-          memory: 16Gi
+          memory: 8Gi
       storage:
         storageClassName: "ocs-storagecluster-cephfs"
-        size: "200G"
+        size: "100G"
       redundancyPolicy: "SingleRedundancy"
   visualization: 
     type: "kibana"
     kibana:
       resources:
         limits:
-          memory: 736Mi
+          memory: 256Mi
         requests:
           cpu: 100m
-          memory: 736Mi
+          memory: 256Mi
       replicas: 1
   collection: 
     logs:
