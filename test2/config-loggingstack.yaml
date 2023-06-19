@@ -18,12 +18,12 @@ spec:
       nodeCount: 3
       storage:
         storageClassName: "ocs-storagecluster-ceph-rbd"
-        size: 200G
+        size: 100G
       resources:
         limits:
-          memory: "16Gi"
+          memory: "8Gi"
         requests:
-          memory: "16Gi"
+          memory: "8Gi"
           cpu: "500m"
       proxy:
         resources:
