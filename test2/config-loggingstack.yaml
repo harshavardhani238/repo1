@@ -23,7 +23,7 @@ spec:
         limits:
           memory: "16Gi"
         requests:
-          memory: "8Gi"
+          memory: "16Gi"
           cpu: "500m"
       proxy:
         resources:
