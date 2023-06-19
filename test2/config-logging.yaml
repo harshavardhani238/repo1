@@ -20,21 +20,21 @@ spec:
         limits:
           memory: 8Gi
         requests:
-          cpu: 500m
+          cpu: 256m
           memory: 8Gi
       storage:
         storageClassName: "ocs-storagecluster-ceph-rbd"
-        size: "200G"
+        size: "100G"
       redundancyPolicy: "SingleRedundancy"
   visualization: 
     type: "kibana"
     kibana:
       resources:
         limits:
-          memory: 736Mi
+          memory: 256Mi
         requests:
           cpu: 100m
-          memory: 736Mi
+          memory: 256Mi
       replicas: 1
   collection: 
     logs:
@@ -42,7 +42,7 @@ spec:
       fluentd:
         resources:
           limits:
-            memory: 736Mi
+            memory: 256Mi
           requests:
             cpu: 100m
             memory: 736Mi
