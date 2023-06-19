@@ -34,7 +34,7 @@ spec:
           memory: 300Mi
         requests:
           cpu: 100m
-          memory: 300Mi
+          memory: 256Mi
       replicas: 1
   collection: 
     logs:
@@ -45,4 +45,4 @@ spec:
             memory: 300Mi
           requests:
             cpu: 100m
-            memory: 300Mi
+            memory: 256Mi
