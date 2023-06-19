@@ -4,45 +4,51 @@ metadata:
   name: "instance" 
   namespace: "openshift-logging" 
 spec:
-  managementState: "Managed" 
+  managementState: "Managed"
   logStore:
-    type: "elasticsearch" 
-    retentionPolicy:
-      application:
-        maxAge: 1d
-      infra:
-        maxAge: 7d
-      audit:
-        maxAge: 7d
+    type: "elasticsearch"
     elasticsearch:
       nodeCount: 3
+      tolerations: 
+      - key: "logging"
+        operator: "Exists"
+        effect: "NoExecute"
+        tolerationSeconds: 6000
       resources:
         limits:
           memory: 8Gi
-        requests:
-          cpu: "1"
-          memory: 8Gi
-      storage:
-        storageClassName: "ocs-storagecluster-ceph-rbd"
-        size: "50G"
-      redundancyPolicy: "SingleRedundancy"
-  visualization: 
-    type: "kibana"
-    kibana:
-      resources:
-        limits:
-          memory: 300Mi
         requests:
           cpu: 100m
-          memory: 256Mi
+          memory: 8Gi
+      storage: {}
+      redundancyPolicy: "ZeroRedundancy"
+  visualization:
+    type: "kibana"
+    kibana:
+      tolerations: 
+      - key: "logging"
+        operator: "Exists"
+        effect: "NoExecute"
+        tolerationSeconds: 6000
+      resources:
+        limits:
+          memory: 2Gi
+        requests:
+          cpu: 100m
+          memory: 1Gi
       replicas: 1
-  collection: 
+  collection:
     logs:
       type: "fluentd"
       fluentd:
+        tolerations: 
+        - key: "logging"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 6000
         resources:
           limits:
-            memory: 300Mi
+            memory: 2Gi
           requests:
             cpu: 100m
-            memory: 256Mi
+            memory: 1Gi
