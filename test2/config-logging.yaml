@@ -1,8 +1,8 @@
 apiVersion: "logging.openshift.io/v1"
 kind: "ClusterLogging"
 metadata:
-  name: "instance" 
-  namespace: "openshift-logging" 
+  name: "instance"
+  namespace: openshift-logging
 spec:
   managementState: "Managed"
   logStore:
@@ -16,10 +16,10 @@ spec:
         tolerationSeconds: 6000
       resources:
         limits:
-          memory: 8Gi
+          memory: 16Gi
         requests:
           cpu: 200m
-          memory: 8Gi
+          memory: 16Gi
       storage: {}
       redundancyPolicy: "ZeroRedundancy"
   visualization:
@@ -32,10 +32,10 @@ spec:
         tolerationSeconds: 6000
       resources:
         limits:
-          memory: 256Mi
+          memory: 2Gi
         requests:
           cpu: 100m
-          memory: 256Mi
+          memory: 1Gi
       replicas: 1
   collection:
     logs:
@@ -48,7 +48,7 @@ spec:
           tolerationSeconds: 6000
         resources:
           limits:
-            memory: 256Mi
+            memory: 2Gi
           requests:
             cpu: 100m
-            memory: 256Mi
+            memory: 1Gi
