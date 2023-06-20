@@ -9,26 +9,40 @@ spec:
     type: "elasticsearch"
     elasticsearch:
       nodeCount: 3
-      tolerations: 
-      - key: "logging"
-        operator: "Exists"
-        effect: "NoExecute"
-        tolerationSeconds: 6000
-      storage: {}
+      resources: 
+        limits:
+          memory: 8Gi
+        requests:
+          cpu: 200m
+          memory: 8Gi
+      storage:
+        storageClassName: "ocs-storagecluster-ceph-rbd"
+        size: "100G"
+      redundancyPolicy: "SingleRedundancy"
   visualization:
     type: "kibana"
     kibana:
-      tolerations: 
-      - key: "logging"
-        operator: "Exists"
-        effect: "NoExecute"
-        tolerationSeconds: 6000
-      replicas: 1
+      resources: 
+        limits:
+          memory: 300Mi
+        requests:
+          cpu: 100m
+          memory: 100Mi
+      proxy:
+        resources: 
+          limits:
+            memory: 256Mi
+          requests:
+            cpu: 100m
+            memory: 256Mi
+      replicas: 2
   collection:
     logs:
       type: "fluentd"
       fluentd:
-        tolerations: 
-        - key: "logging"
-          operator: "Exists"
-          effect: "NoExecute"
+        resources: 
+          limits:
+            memory: 256Mi
+          requests:
+            cpu: 100m
+            memory: 256Mi
