@@ -14,10 +14,7 @@ spec:
         operator: "Exists"
         effect: "NoExecute"
         tolerationSeconds: 6000
-      storage:
-        storageClassName: "ocs-storagecluster-ceph-rbd"
-        size: "50G"
-      redundancyPolicy: "SingleRedundancy"
+      storage: {}
   visualization:
     type: "kibana"
     kibana:
