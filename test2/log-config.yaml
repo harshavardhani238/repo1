@@ -14,12 +14,6 @@ spec:
         operator: "Exists"
         effect: "NoExecute"
         tolerationSeconds: 6000
-      resources:
-        limits:
-          memory: 300Mi
-        requests:
-          cpu: 100m
-          memory: 100Mi
       storage:
         storageClassName: "ocs-storagecluster-ceph-rbd"
         size: "50G"
@@ -32,12 +26,6 @@ spec:
         operator: "Exists"
         effect: "NoExecute"
         tolerationSeconds: 6000
-      resources:
-        limits:
-          memory: 500Mi
-        requests:
-          cpu: 100m
-          memory: 300Mi
       replicas: 1
   collection:
     logs:
@@ -47,9 +35,3 @@ spec:
         - key: "logging"
           operator: "Exists"
           effect: "NoExecute"
-        resources: 
-          limits:
-            memory: 500Mi
-          requests:
-            cpu: 100m
-            memory: 500Mi
