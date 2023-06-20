@@ -10,6 +10,12 @@ spec:
     elasticsearch:
       nodeCount: 3
       storage: {}
+      resources: 
+        limits:
+          memory: 300Mi
+        requests:
+          cpu: 100m
+          memory: 100Mi
       proxy:
         resources: 
           limits:
