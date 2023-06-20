@@ -8,13 +8,13 @@ spec:
   logStore:
     type: "elasticsearch"
     elasticsearch:
-      nodeCount: 3
+      nodeCount: 1
       resources: 
         limits:
-          memory: 8Gi
+          memory: 500Mi
         requests:
-          cpu: 200m
-          memory: 8Gi
+          cpu: 100m
+          memory: 300Mi
       storage:
         storageClassName: "ocs-storagecluster-ceph-rbd"
         size: "100G"
