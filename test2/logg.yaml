@@ -9,12 +9,6 @@ spec:
     type: "elasticsearch"
     elasticsearch:
       nodeCount: 3
-      resources: 
-        limits:
-          memory: 736Mi
-        requests:
-          cpu: 100m
-          memory: 500Mi
       storage: {}
       proxy:
         resources: 
