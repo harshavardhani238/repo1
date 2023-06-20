@@ -16,10 +16,10 @@ spec:
         tolerationSeconds: 6000
       resources:
         limits:
-          memory: 500Mi
+          memory: 100Mi
         requests:
-          cpu: 100m
-          memory: 500Mi
+          cpu: 5m
+          memory: 100Mi
       storage:
         storageClassName: "ocs-storagecluster-ceph-rbd"
         size: "50G"
@@ -34,10 +34,10 @@ spec:
         tolerationSeconds: 6000
       resources:
         limits:
-          memory: 500Mi
+          memory: 100Mi
         requests:
-          cpu: 100m
-          memory: 500Mi
+          cpu: 5m
+          memory: 100Mi
       replicas: 1
   collection:
     logs:
