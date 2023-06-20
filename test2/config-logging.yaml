@@ -19,10 +19,10 @@ spec:
         tolerationSeconds: 6000
       resources:
         limits:
-          memory: 8Gi
+          memory: 736Mi
         requests:
-          cpu: 200m
-          memory: 8Gi
+          cpu: 100m
+          memory: 736Mi
       storage: {}
       redundancyPolicy: "ZeroRedundancy"
   visualization:
@@ -53,4 +53,4 @@ spec:
             memory: 500Mi
           requests:
             cpu: 100m
-            memory: 500i
+            memory: 500Mi
