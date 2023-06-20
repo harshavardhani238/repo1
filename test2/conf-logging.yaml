@@ -11,10 +11,10 @@ spec:
       nodeCount: 1
       resources: 
         limits:
-          memory: 500Mi
+          memory: 300Mi
         requests:
           cpu: 100m
-          memory: 300Mi
+          memory: 100Mi
       storage: {}
   visualization:
     type: "kibana"
