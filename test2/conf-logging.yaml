@@ -15,10 +15,7 @@ spec:
         requests:
           cpu: 100m
           memory: 300Mi
-      storage:
-        storageClassName: "ocs-storagecluster-ceph-rbd"
-        size: "100G"
-      redundancyPolicy: "SingleRedundancy"
+      storage: {}
   visualization:
     type: "kibana"
     kibana:
