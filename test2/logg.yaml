@@ -11,10 +11,10 @@ spec:
       nodeCount: 1
       resources: 
         limits:
-          memory: 300Mi
+          memory: 736Mi
         requests:
           cpu: 100m
-          memory: 100Mi
+          memory: 500Mi
       storage: {}
   visualization:
     type: "kibana"
@@ -28,7 +28,7 @@ spec:
       proxy:
         resources: 
           limits:
-            memory: 256Mi
+            memory: 500Mi
           requests:
             cpu: 100m
             memory: 256Mi
@@ -39,7 +39,7 @@ spec:
       fluentd:
         resources: 
           limits:
-            memory: 256Mi
+            memory: 500Mi
           requests:
             cpu: 100m
             memory: 256Mi
