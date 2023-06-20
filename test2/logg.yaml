@@ -16,6 +16,13 @@ spec:
           cpu: 100m
           memory: 500Mi
       storage: {}
+      proxy:
+        resources: 
+          limits:
+            memory: 500Mi
+          requests:
+            cpu: 100m
+            memory: 256Mi
   visualization:
     type: "kibana"
     kibana:
@@ -25,13 +32,6 @@ spec:
         requests:
           cpu: 100m
           memory: 100Mi
-      proxy:
-        resources: 
-          limits:
-            memory: 500Mi
-          requests:
-            cpu: 100m
-            memory: 256Mi
       replicas: 2
   collection:
     logs:
