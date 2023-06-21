@@ -2,7 +2,7 @@ apiVersion: "logging.openshift.io/v1"
 kind: "ClusterLogging"
 metadata:
   name: "instance" 
-  namespace: "new-logging"
+  namespace: "openshift-logging"
 spec:
   managementState: "Managed"  
   logStore:
