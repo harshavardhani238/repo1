@@ -8,7 +8,7 @@ spec:
   logStore:
     type: "elasticsearch"
     elasticsearch:
-      nodeCount: 9
+      nodeCount: 1
       storage: {}
       resources: 
         limits:
