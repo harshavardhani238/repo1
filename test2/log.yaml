@@ -22,9 +22,9 @@ spec:
       redundancyPolicy: "SingleRedundancy"
       resources: 
           limits:
-            memory: "16Gi"
+            memory: "20Gi"
           requests:
-            memory: "16Gi"
+            memory: "20Gi"
       proxy: 
         resources:
           limits:
