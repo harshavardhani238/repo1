@@ -15,10 +15,8 @@ spec:
       audit:
         maxAge: 7d
     elasticsearch:
-      nodeCount: 3 
-      storage:
-        storageClassName: "odf-volume" 
-        size: 20G
+      nodeCount: 2
+      storage: {}
       resources: 
           limits:
             memory: "1Gi"
