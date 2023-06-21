@@ -43,5 +43,5 @@ spec:
           requests:
             cpu: 100m
             memory: 256Mi
-  http.compression: true
+ 
 
