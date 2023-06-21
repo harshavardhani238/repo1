@@ -8,14 +8,14 @@ spec:
   logStore:
     type: "elasticsearch"
     elasticsearch:
-      nodeCount: 6
+      nodeCount: 2
       storage: {}
       resources: 
         limits:
-          memory: 300Mi
+          memory: 736Mi
         requests:
           cpu: 100m
-          memory: 100Mi
+          memory: 300Mi
       proxy:
         resources: 
           limits:
