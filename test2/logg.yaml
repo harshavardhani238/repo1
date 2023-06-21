@@ -15,7 +15,7 @@ spec:
       audit:
         maxAge: 7d
     elasticsearch:
-      nodeCount: 2 
+      nodeCount: 3 
       storage:
         storageClassName: "local-storage" 
         size: 20G
