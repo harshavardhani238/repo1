@@ -18,13 +18,13 @@ spec:
       nodeCount: 3
       storage: 
         storageClassName: "new-pv-test1"
-        size: "10Gi"
+        size: "30Gi"
       redundancyPolicy: "SingleRedundancy"
       resources: 
           limits:
-            memory: "20Gi"
+            memory: "16Gi"
           requests:
-            memory: "20Gi"
+            memory: "16Gi"
       proxy: 
         resources:
           limits:
