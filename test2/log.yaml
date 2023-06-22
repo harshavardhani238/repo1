@@ -18,12 +18,12 @@ spec:
       nodeCount: 3
       storage: 
          storageClassName: "new-pv-test"
-         size: "100Gi"
+         size: "30Gi"
       resources: 
         limits:
-          memory: "30Gi"
+          memory: "16Gi"
         requests:
-          memory: "30Gi"
+          memory: "16Gi"
       redundancyPolicy: "SingleRedundancy"
   visualization:
     type: "kibana"  
