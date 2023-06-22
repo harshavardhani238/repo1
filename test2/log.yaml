@@ -18,12 +18,12 @@ spec:
       nodeCount: 3
       storage: 
          storageClassName: "odf-volume"
-         size: "100Gi"
+         size: "200Gi"
       resources: 
         limits:
-          memory: "30Gi"
+          memory: "16Gi"
         requests:
-          memory: "30Gi"
+          memory: "16Gi"
       proxy: 
         resources:
           limits:
