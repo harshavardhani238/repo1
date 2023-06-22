@@ -17,7 +17,7 @@ spec:
     elasticsearch:
       nodeCount: 2 
       storage: 
-         storageClassName: "new-pv"
+         storageClassName: "odf-volume"
          size: "200G"
       resources: 
         limits:
