@@ -15,7 +15,7 @@ spec:
       audit:
         maxAge: 7d
     elasticsearch:
-      nodeCount: 3 
+      nodeCount: 4 
       storage:
         storageClassName: "new-pv-test" 
         size: 30Gi
