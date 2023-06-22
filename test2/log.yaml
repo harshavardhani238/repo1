@@ -17,13 +17,13 @@ spec:
     elasticsearch:
       nodeCount: 2 
       storage:
-        storageClassName: "new-pv-test" 
+        storageClassName: "odf-volume" 
         size: 100Gi
       resources: 
         limits:
-          memory: "30Gi"
+          memory: "16Gi"
         requests:
-          memory: "30Gi"
+          memory: "16Gi"
       proxy: 
         resources:
           limits:
