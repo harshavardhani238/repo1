@@ -15,15 +15,15 @@ spec:
       audit:
         maxAge: 7d
     elasticsearch:
-      nodeCount: 4 
+      nodeCount: 2 
       storage:
         storageClassName: "new-pv-test" 
         size: 30Gi
       resources: 
         limits:
-          memory: "16Gi"
+          memory: "30Gi"
         requests:
-          memory: "16Gi"
+          memory: "20Gi"
       proxy: 
         resources:
           limits:
