@@ -21,9 +21,9 @@ spec:
         size: 30Gi
       resources: 
         limits:
-          memory: "10Gi"
+          memory: "16Gi"
         requests:
-          memory: "10Gi"
+          memory: "16Gi"
       proxy: 
         resources:
           limits:
