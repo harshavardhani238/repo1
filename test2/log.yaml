@@ -16,9 +16,7 @@ spec:
         maxAge: 7d
     elasticsearch:
       nodeCount: 2 
-      storage:
-        storageClassName: "odf-volume" 
-        size: 100Gi
+      storage: {}
       resources: 
         limits:
           memory: "16Gi"
