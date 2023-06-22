@@ -24,6 +24,12 @@ spec:
           memory: "16Gi"
         requests:
           memory: "16Gi"
+      proxy: 
+        resources:
+          limits:
+            memory: 256Mi
+          requests:
+             memory: 256Mi
       redundancyPolicy: "SingleRedundancy"
   visualization:
     type: "kibana"  
