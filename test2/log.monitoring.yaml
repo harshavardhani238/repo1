@@ -13,3 +13,10 @@ data:
           resources:
             requests:
               storage: 30Gi
+    alertmanagerMain:
+      volumeClaimTemplate:
+        spec:
+          storageClassName:  odf-volume
+          resources:
+            requests:
+              storage: 10Gi
