@@ -1,5 +1,5 @@
 apiVersion: "logging.openshift.io/v1"
-kind: "clusterlogging"
+kind: "ClusterLogging"
 metadata:
   name: "instance" 
   namespace: "openshift-logging" 
