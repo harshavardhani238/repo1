@@ -1,0 +1,14 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  labels:
+    machineconfiguration.openshift.io/role: worker
+  name: 05-worker-kernelarg-selinuxpermissive
+spec:
+  kernelArguments:
+    - kernel.core_uses_pid = 1
+    - kernel.msgmax = 65536
+    - kernel.msgmnb = 65536
+    - kernel.shmall = 4294967296
+    - kernel.shmmax = 68719476736
+    - kernel.sysrq = 16 
